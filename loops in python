@@ -1,0 +1,57 @@
+ #for loop enables you to execute a code block multiple times
+ # For loop example
+
+dates = [2020,2021,2022]
+N = len(dates)
+
+for i in range(N):
+    print(dates[i])  
+
+# (method2)  
+
+#for year in dates:  
+#    print(year)   
+
+#The while loop exists as a tool for repeated execution based on a condition. The code block will keep being executed until the given logical condition returns a False boolean value.
+# While Loop Example
+
+dates = [2020,2021,2022,2023,2024]
+
+i = 0
+year = dates[0]
+
+while(year != 2023):    
+    print(year)
+    i = i + 1
+    year = dates[i]
+    
+
+print("It took ", i ,"repetitions to get out of loop.")
+
+
+
+# Write your code below and press Shift+Enter to execute
+PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
+i = 0
+Rating = PlayListRatings[0]
+while(i < len(PlayListRatings) and Rating >= 6):
+    print(Rating)
+    Rating = PlayListRatings[i]
+    i = i + 1
+    
+
+
+# Write your code below and press Shift+Enter to execute
+
+squares = ['orange', 'orange', 'purple', 'blue ', 'orange']
+new_squares = []
+i = 0
+while(i < len(squares) and squares[i] == 'orange'):
+    new_squares.append(squares[i])
+    i = i + 1
+print (new_squares)
+
+
+
+# Thanks to author: 
+Joseph Santarcangelo
